@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Expense Tracker</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+    <h1>EXPENSE TRACKER</h1>
+    <form id="expense-form">
+        <label for="expense-name">EXPENSE:</label>
+        <input type="text" id="expense-name" name="expense" placeholder="EXPENSE NAME" required />
+        <br />
+        <label for="amount">AMOUNT:</label>
+        <input type="text" id="amount" name="amount" placeholder="AMOUNT" required />
+        <br />
+        <label for="date">DATE:</label>
+        <input type="date" id="date" name="date" required />
+        <br />
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <h1>SEARCH EXPENSE</h1>
+    <label for="search">ENTER THE EXPENSE NAME TO SEARCH</label>
+    <input type="text" id="search" placeholder="Search by Expense" />
+    <button onclick="searchExpense()">SEARCH</button>
+
+    <h2>SEARCH RESULT</h2>
+    <div id="searchResult1"></div>
+
+    <h1>AMOUNT SPENT FOR AN ITEM</h1>
+    <input type="text" id="itemName" placeholder="Enter the name" />
+    <input type="month" id="month" />
+    <button onclick="totalExpense()">Calculate</button>
+
+    <h2>SEARCH RESULT</h2>
+    <div id="total_expense"></div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

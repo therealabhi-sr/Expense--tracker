@@ -1,0 +1,58 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+  color: #333;
+}
+
+/* Inputs and buttons */
+input, button {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+/* Input focus effect */
+input:focus {
+  outline: none;
+  border-color: #00796b;
+  background-color: #e0f2f1;
+}
+
+/* Button styles */
+button {
+  background: linear-gradient(to right, #00bcd4, #009688);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 188, 212, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(to right, #009688, #00796b);
+  transform: scale(1.02);
+}
+
+/* Expense item box */
+.expense-item {
+  background-color: #ffffff;
+  border-left: 5px solid #00bcd4;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.expense-item:hover {
+  transform: scale(1.01);
+  background-color: #f1f1f1;
+}
